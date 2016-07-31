@@ -1,0 +1,14 @@
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\ErrorsAndLogs3Layers.exe.config
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\obj\Debug\ErrorsAndLogs3Layers.csprojResolveAssemblyReference.cache
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\ErrorsAndLogs3Layers.exe
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\ErrorsAndLogs3Layers.pdb
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\obj\Debug\ErrorsAndLogs3Layers.exe
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\obj\Debug\ErrorsAndLogs3Layers.pdb
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\EntityFramework.dll
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\EntityFramework.SqlServer.dll
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\System.Data.SQLite.dll
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\System.Data.SQLite.EF6.dll
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\System.Data.SQLite.Linq.dll
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\EntityFramework.xml
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\EntityFramework.SqlServer.xml
+C:\EPAM\Task_10_ErrorsAndLogs3Layers\ErrorsAndLogs3Layers\bin\Debug\System.Data.SQLite.xml
