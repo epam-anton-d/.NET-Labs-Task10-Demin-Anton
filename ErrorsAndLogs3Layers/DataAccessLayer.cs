@@ -17,6 +17,7 @@ namespace ErrorsAndLogs3Layers.Core
             
         }
 
+        // Получить данные о папках из файла.
         public string GetFoldersFromFile()
         {
             string readFoldersTxt;
@@ -36,6 +37,7 @@ namespace ErrorsAndLogs3Layers.Core
             return readFoldersTxt;
         }
 
+        // Получить данные о файлах из файла.
         public string GetFilesFromFile()
         {
             string readFilesTxt;
@@ -56,6 +58,7 @@ namespace ErrorsAndLogs3Layers.Core
             return readFilesTxt;
         }
 
+        // Записать данные о папках в файл.
         public int PutFoldersIntoFile(List<Folders> folderList)
         {
             try
@@ -77,6 +80,7 @@ namespace ErrorsAndLogs3Layers.Core
             return 0;
         }
 
+        // Записать данные о файлах в файл.
         public int PutFilesIntoFile(List<Files> fileList)
         {
             try

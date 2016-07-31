@@ -14,6 +14,7 @@ namespace ErrorsAndLogs3Layers
         static void Main(string[] args)
         {            
             BusinessLogicLayer businessLogicLayer = new BusinessLogicLayer();
+            // Получение данных из файлов.
             List<Folders> folderList = businessLogicLayer.FillFoldersCollection();
             List<Files> fileList = businessLogicLayer.FillFilesCollection();
 
@@ -37,6 +38,8 @@ namespace ErrorsAndLogs3Layers
                 read = Console.ReadLine();
                 read = read.Trim();
 
+                // Проверка ввода пользователя на соответствие шаблонам.
+                // Создание директории.
                 if (Regex.IsMatch(read, patternMkdir + patternPathFolder))
                 {
                     commands = read.Split(space);
@@ -50,6 +53,7 @@ namespace ErrorsAndLogs3Layers
                         Console.WriteLine(error);
                     }
                 }
+                // Создание файла.
                 else if (Regex.IsMatch(read, patternCreate + patternPathFile))
                 {
                     commands = read.Split(space);
@@ -63,6 +67,7 @@ namespace ErrorsAndLogs3Layers
                         Console.WriteLine(error);
                     }
                 }
+                // Копирование файла.
                 else if (Regex.IsMatch(read, patternCopy + patternPathFile + patternPathFolder))
                 {
                     commands = read.Split(space);
@@ -76,6 +81,7 @@ namespace ErrorsAndLogs3Layers
                         Console.WriteLine(error);
                     }
                 }
+                // Копирование папки.
                 else if (Regex.IsMatch(read, patternCopy + patternPathFolder + patternPathFolder))
                 {
                     commands = read.Split(space);
@@ -89,6 +95,7 @@ namespace ErrorsAndLogs3Layers
                         Console.WriteLine(error);
                     }
                 }
+                // Удаление файла.
                 else if (Regex.IsMatch(read, patternDelete + patternPathFile))
                 {
                     commands = read.Split(space);
@@ -102,6 +109,7 @@ namespace ErrorsAndLogs3Layers
                         Console.WriteLine(error);
                     }
                 }
+                // Удаление папки.
                 else if (Regex.IsMatch(read, patternDelete + patternPathFolder))
                 {
                     commands = read.Split(space);
@@ -115,6 +123,7 @@ namespace ErrorsAndLogs3Layers
                         Console.WriteLine(error);
                     }
                 }
+                // Перемещение файла.
                 else if (Regex.IsMatch(read, patternMove + patternPathFile + patternPathFolder))
                 {
                     commands = read.Split(space);
@@ -128,6 +137,7 @@ namespace ErrorsAndLogs3Layers
                         Console.WriteLine(error);
                     }
                 }
+                // Перемещение папки.
                 else if (Regex.IsMatch(read, patternMove + patternPathFolder + patternPathFolder))
                 {
                     commands = read.Split(space);
@@ -141,6 +151,7 @@ namespace ErrorsAndLogs3Layers
                         Console.WriteLine(error);
                     }
                 }
+                // Получение дерева каталогов.
                 else if (Regex.IsMatch(read, patternTree + patternPathFolder))
                 {
                     commands = read.Split(space);
@@ -154,6 +165,7 @@ namespace ErrorsAndLogs3Layers
                         Console.WriteLine(error);
                     }
                 }
+                // Выход.
                 else if (read == patternExit)
                 {
                     break;

@@ -21,6 +21,7 @@ namespace ErrorsAndLogs3Layers.Core
             List<Files> fileList = FillFilesCollection();
         }
 
+        // Заполнение коллекции сохраненными файлами.
         public List<Files> FillFilesCollection()
         {
             string readFilesTxt = dataAccessLayer.GetFilesFromFile();
@@ -46,6 +47,7 @@ namespace ErrorsAndLogs3Layers.Core
             return fileList;
         }
 
+        // Заполнение коллекции сохраненными папками.
         public List<Folders> FillFoldersCollection()
         {
             string readFoldersTxt = dataAccessLayer.GetFoldersFromFile();
@@ -71,11 +73,13 @@ namespace ErrorsAndLogs3Layers.Core
             return folderList;
         }
 
+        // Сохранение данных о паках в файл.
         public void SaveFolderChanges(List<Folders> folderList)
         {
             dataAccessLayer.PutFoldersIntoFile(folderList);
         }
 
+        // Сохранение данных о файлах.
         public void SaveFileChanges(List<Files> fileList)
         {
             dataAccessLayer.PutFilesIntoFile(fileList);
